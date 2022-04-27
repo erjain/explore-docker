@@ -1,0 +1,7 @@
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\WebApp.exe
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\WebApp.dll
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\WebApp.deps.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\WebApp.runtimeconfig.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp\obj\Release\net6.0\PubTmp\Out\WebApp.pdb

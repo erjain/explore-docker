@@ -1,0 +1,11 @@
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\webApi.exe
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\webApi.dll
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\webApi.deps.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\webApi.runtimeconfig.json
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\webApi.pdb
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Tarun\poc\aks\explore-docker\explore-docker\webApi\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

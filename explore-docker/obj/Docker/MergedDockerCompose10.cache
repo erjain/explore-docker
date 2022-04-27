@@ -1,0 +1,79 @@
+services:
+  webapi:
+    build:
+      context: C:\Tarun\poc\aks\explore-docker\explore-docker
+      dockerfile: webApi/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: webApi
+      target: base
+    container_name: webApi
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: webapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/webApi.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 52080
+      target: 80
+    - published: 51443
+      target: 443
+    tty: true
+    volumes:
+    - C:\Tarun\poc\aks\explore-docker\explore-docker\webApi:/app:rw
+    - C:\Users\v-tjain\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\v-tjain\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\v-tjain\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\v-tjain\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Tarun\poc\aks\explore-docker\explore-docker:/src:rw
+  webapp:
+    build:
+      context: C:\Tarun\poc\aks\explore-docker\explore-docker
+      dockerfile: WebApp/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: WebApp
+      target: base
+    container_name: WebApp
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+      WebApiBaseAddress: http://webapi
+    image: webapp:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/net6.0/WebApp.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 50080
+      target: 80
+    - published: 50443
+      target: 443
+    tty: true
+    volumes:
+    - C:\Tarun\poc\aks\explore-docker\explore-docker\WebApp:/app:rw
+    - C:\Users\v-tjain\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\v-tjain\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\v-tjain\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages:ro
+    - C:\Users\v-tjain\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Tarun\poc\aks\explore-docker\explore-docker:/src:rw
+version: '3.4'

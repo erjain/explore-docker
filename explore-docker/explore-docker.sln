@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApi", "webApi\webApi.csproj", "{50AB195D-BC3D-44BF-ABA5-256118C469D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{C5DE9C71-954C-4028-8E59-DF796AE7EABD}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BE71AA3F-29CA-4782-92F3-41FA04B5FFA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50AB195D-BC3D-44BF-ABA5-256118C469D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AB195D-BC3D-44BF-ABA5-256118C469D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AB195D-BC3D-44BF-ABA5-256118C469D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AB195D-BC3D-44BF-ABA5-256118C469D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DE9C71-954C-4028-8E59-DF796AE7EABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DE9C71-954C-4028-8E59-DF796AE7EABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DE9C71-954C-4028-8E59-DF796AE7EABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DE9C71-954C-4028-8E59-DF796AE7EABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE71AA3F-29CA-4782-92F3-41FA04B5FFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE71AA3F-29CA-4782-92F3-41FA04B5FFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE71AA3F-29CA-4782-92F3-41FA04B5FFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE71AA3F-29CA-4782-92F3-41FA04B5FFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63590538-0F8F-4216-B6CD-38C4B82592BD}
+	EndGlobalSection
+EndGlobal
